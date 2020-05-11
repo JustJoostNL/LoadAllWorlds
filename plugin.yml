@@ -1,0 +1,12 @@
+---
+name: LoadAllWorlds
+version: 0.0.3
+main: koningcool\loadallworlds\Main
+api: 3.12.0
+
+commands:
+  loadall:
+    description: Load all the worlds in the server!
+    permission: loadallworlds.load.worlds
+    aliases: [loadallworlds,loadworlds,worldloader] 
+...
