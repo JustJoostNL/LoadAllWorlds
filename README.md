@@ -38,5 +38,8 @@ This is a very easy plugin but its very helpful!
  /law
 
 # Permissions:
+
+ The permission to use the command:
+
  loadallworlds.command
 
