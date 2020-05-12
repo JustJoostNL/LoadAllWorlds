@@ -1,4 +1,4 @@
-   # Statics
+   # Statistics
 
 | HitCount | License | Poggit | Release |
 |:--:|:--:|:--:|:--:|
