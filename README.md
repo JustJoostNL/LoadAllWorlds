@@ -42,8 +42,14 @@ If you only use 1 world, this plugin is not necessary
  The permission to use the command:
 
  loadallworlds.command
+ 
+ # Issues
 
- # Info
+ -At the moment there are no problems!
+ 
+ [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)]
+
+# Info
  Name: LoadAllWorlds
  
  Author: koningcool
