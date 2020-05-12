@@ -24,12 +24,17 @@ interface PluginIdentifiableCommand{
 
 
 class Main extends PluginBase{
+     /** @var Config */
+ public $myConfig;
 
     public function onLoad() : void{
             $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");}
 
     public function onEnable() : void{
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");}
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
+        @mkdir($this->getDataFolder());
+        $this->saveResource("Config.yml");
+        $this->myConfig = new Config($this->getDataFolder() . "Config.yml", Config::YAML);}
         
 
     public function onDisable() : void{
