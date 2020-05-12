@@ -41,7 +41,7 @@ class Main extends PluginBase{
             case "loadall":
                 foreach(array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName){
                     if($this->getServer()->loadLevel($levelName)){
-                        $this->getLogger()->debug("Successfully loaded §6${levelName}");
+                        //$this->getLogger()->debug("Successfully loaded §6${levelName}");
                     }    
                 }       
         }
