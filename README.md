@@ -8,22 +8,19 @@
 # General
 This is a plugin that adds a command to load all the worlds.
 
-You can use 1 of the following commands: 
+In this plugin you only load the worlds when you execute a command. And not when starting the server.
 
-/loadall
-
-/loadallworlds
-
-/loadworlds
-
-/worldloader
-
-/law
-
-If you use 1 of this commands all the worlds in your PocketMine server loads automatic.
+Because if you do not use a world, is it waste of your memory.
 
 This is a very easy plugin but its very helpful!
 
+
+# Important
+
+If you only use 1 world, this plugin is not necessary
+
+# ToDo
+ - you can choose all the worlds load on startup or with a command
 
 
 # Commands:
