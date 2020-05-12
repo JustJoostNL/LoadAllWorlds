@@ -34,8 +34,8 @@ class Main extends PluginBase{
     public function onEnable() : void{
         $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         @mkdir($this->getDataFolder());
-        $this->saveResource("Config.yml");
-        $this->myConfig = new Config($this->getDataFolder() . "Config.yml", Config::YAML);}
+        $this->saveResource("config.yml");
+        $this->myConfig = new Config($this->getDataFolder() . "config.yml", Config::YAML);}
         
 
     public function onDisable() : void{
