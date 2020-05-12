@@ -17,14 +17,7 @@ If you use 1 of this commands all the worlds in your PocketMine server loads aut
 
 This is a very easy plugin but its very helpful!
 
-# Info
- Name: LoadAllWorlds
- 
- Author: koningcool
- 
- GitHub: https://github.com/koningcool/loadallworlds
 
- Version: 0.0.5
 
 # Commands:
  /loadall
@@ -42,4 +35,13 @@ This is a very easy plugin but its very helpful!
  The permission to use the command:
 
  loadallworlds.command
+
+ # Info
+ Name: LoadAllWorlds
+ 
+ Author: koningcool
+ 
+ GitHub: https://github.com/koningcool/loadallworlds
+
+ Version: 0.0.5
 
