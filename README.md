@@ -23,7 +23,7 @@ If you only use 1 world, this plugin is not necessary
  - You can choose all the worlds load on startup or with a command.
 
 
-# Commands:
+# Commands
 
  Use 1 of this following commands to load all the worlds in the server!
 
@@ -37,7 +37,7 @@ If you only use 1 world, this plugin is not necessary
  
  /law
 
-# Permissions:
+# Permissions
 
  The permission to use the command:
 
