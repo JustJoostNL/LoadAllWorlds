@@ -6,7 +6,9 @@ This is a very easy plugin but its very helpful!
 
 # Info
  Name: LoadAllWorlds
+ 
  Author: koningcool
+ 
  GitHub: https://github.com/koningcool/loadallworlds
 
 # Commands:
