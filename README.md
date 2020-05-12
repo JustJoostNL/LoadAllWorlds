@@ -20,7 +20,14 @@ This is a very easy plugin but its very helpful!
 If you only use 1 world, this plugin is not necessary
 
 # ToDo
- - You can choose all the worlds load on startup or with a command.
+
+ - Implementing config.yml with the function load all the worlds on startup or on command
+
+Example:
+
+#Do you want all worlds to be loaded at startup or at a command
+#Choose: "command" or "startup"
+load-on: command
 
 
 # Commands
