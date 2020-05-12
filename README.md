@@ -26,7 +26,9 @@ If you only use 1 world, this plugin is not necessary
 Example:
 
 #Do you want all worlds to be loaded at startup or at a command
+
 #Choose: "command" or "startup"
+
 load-on: command
 
 
