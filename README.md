@@ -20,7 +20,7 @@ This is a very easy plugin but its very helpful!
 If you only use 1 world, this plugin is not necessary
 
 # ToDo
- - you can choose all the worlds load on startup or with a command
+ - You can choose all the worlds load on startup or with a command.
 
 
 # Commands:
