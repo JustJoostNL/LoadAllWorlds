@@ -45,7 +45,7 @@ If you only use 1 world, this plugin is not necessary
  
  # Issues
 
- -At the moment there are no problems!
+ - At the moment there are no problems!
  
  ![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)
 
