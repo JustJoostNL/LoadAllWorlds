@@ -1,4 +1,4 @@
-   # Statistics
+   # LoadAllWorlds
 
 | HitCount | License | Poggit | Release |
 |:--:|:--:|:--:|:--:|
