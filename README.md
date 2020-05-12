@@ -58,4 +58,6 @@ If you only use 1 world, this plugin is not necessary
  
  Download: You can download the lastest release [here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
  
+ For instalation info go to the [wiki](https://github.com/koningcool/loadallworlds/wiki)
+ 
  
