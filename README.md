@@ -52,5 +52,5 @@ This is a very easy plugin but its very helpful!
 
  Version: 0.0.6
  
- Download: You can download the lastest release [here](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)
+ Download: You can download the lastest release [here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
 
