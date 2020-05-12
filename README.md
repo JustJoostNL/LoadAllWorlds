@@ -47,8 +47,6 @@ If you only use 1 world, this plugin is not necessary
  Name: LoadAllWorlds
  
  Author: koningcool
- 
- GitHub: https://github.com/koningcool/loadallworlds
 
  Version: 0.0.6
  
