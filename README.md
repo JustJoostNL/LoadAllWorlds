@@ -23,7 +23,7 @@ If you only use 1 world, this plugin is not necessary
 
 - Implementing config.yml with the function load all the worlds on startup or on command
 
-Example:
+Example of config.yml:
 
 #Do you want all worlds to be loaded at startup or at a command
 
