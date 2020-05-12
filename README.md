@@ -48,7 +48,7 @@ If you only use 1 world, this plugin is not necessary
  
  Author: koningcool
 
- Version: 0.0.6
+ Version: 0.0.7
  
  Download: You can download the lastest release [here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
  
