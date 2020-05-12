@@ -51,4 +51,17 @@ If you only use 1 world, this plugin is not necessary
  Version: 0.0.6
  
  Download: You can download the lastest release [here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ [![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)
+<a href="https://poggit.pmmp.io/p/LoadAllWorlds"><img src="https://poggit.pmmp.io/shield.state/LoadAllWorlds"></a>
+
 
