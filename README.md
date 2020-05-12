@@ -1,8 +1,8 @@
    # LoadAllWorlds
 
-| HitCount | License | Poggit | Release | Total downloads |
+| HitCount | License | Poggit | Release | Github Release Downloads |
 |:--:|:--:|:--:|:--:|:--:|
-|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)|  ![Total downloads](https://img.shields.io/github/downloads/koningcool/LoadAllWorlds/total.svg)
+|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)|  ![Github Release Downloads](https://img.shields.io/github/downloads/koningcool/LoadAllWorlds/total.svg)
 
 
 # General
