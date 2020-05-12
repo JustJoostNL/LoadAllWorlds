@@ -7,6 +7,7 @@ namespace koningcool\loadallworlds;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 use function array_diff;
 use function scandir;
