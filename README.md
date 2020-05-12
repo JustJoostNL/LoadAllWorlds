@@ -14,6 +14,8 @@ This is a very easy plugin but its very helpful!
  
  GitHub: https://github.com/koningcool/loadallworlds
 
+ Version: 0.0.4
+
 # Commands:
  loadall,loadallworlds,loadworlds,worldloader,law
 
