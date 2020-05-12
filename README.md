@@ -27,6 +27,9 @@ This is a very easy plugin but its very helpful!
 
 
 # Commands:
+
+ Use 1 of this following commands to load all the worlds in the server!
+
  /loadall
  
  /loadallworlds
