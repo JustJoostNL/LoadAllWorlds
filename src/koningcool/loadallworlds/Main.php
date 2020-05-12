@@ -35,8 +35,15 @@ class Main extends PluginBase{
         $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         @mkdir($this->getDataFolder());
         $this->saveResource("config.yml");
-        $this->myConfig = new Config($this->getDataFolder() . "config.yml", Config::YAML);}
-        
+        $this->myConfig = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+        $this->saveDefaultConfig();
+        if($this->getConfig()->get("load-on-startup") === true)
+        foreach(array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName){
+            if($this->getServer()->loadLevel($levelName)){
+                
+            }    
+        }       
+    }    
         
 
     public function onDisable() : void{
