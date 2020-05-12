@@ -47,7 +47,7 @@ If you only use 1 world, this plugin is not necessary
 
  -At the moment there are no problems!
  
- [!Average time to resolve an issue(http://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)]
+ [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)]
 
 # Info
  Name: LoadAllWorlds
