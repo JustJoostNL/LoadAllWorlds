@@ -29,7 +29,8 @@ class Main extends PluginBase{
 
     private function loadWorlds() : void{
         foreach(array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName){
-            if($this->getServer()->loadLevel($levelName));           
+            if($this->getServer()->loadLevel($levelName));
+                      
         }    
     }    
 
@@ -42,9 +43,10 @@ class Main extends PluginBase{
         @mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
         $this->cfg = $this->getConfig()->getAll();
-        if($this->cfg["load-on-startup"] === true){
+        if($this->cfg->get("load-on-startup") === true){
             $this->getLogger()->info(TextFormat::DARK_GREEN . "true");
                 $this->loadWorlds(); 
+                
             
         }
  }
