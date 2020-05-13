@@ -67,6 +67,6 @@ load-on: command
  
  Download: You can download the lastest release [here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
  
- For instalation info go to the [wiki](https://github.com/koningcool/loadallworlds/wiki)
+ For installation info go to the [wiki](https://github.com/koningcool/loadallworlds/wiki)
  
  
