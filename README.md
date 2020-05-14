@@ -25,7 +25,7 @@ If you only use 1 world, this plugin is not necessary
 
 * [ ] Implementing config.yml with the function load all the worlds on startup or on command
 
-Progess: 75%
+Progress: 75%
 
 Example of config.yml:
 
