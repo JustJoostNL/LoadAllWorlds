@@ -31,7 +31,7 @@ class Main extends PluginBase{
     }    
     public function onLoad() : void{
             $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");}
-
+//test
     public function onEnable() : void{
         $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         if (file_exists($this->getDataFolder() . "config.yml")){
