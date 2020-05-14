@@ -27,6 +27,8 @@ If you only use 1 world, this plugin is not necessary
 
 Progress: 75%
 
+See or [project](https://github.com/koningcool/loadallworlds/projects/1)
+
 Example of config.yml:
 
 #Do you want all worlds to be loaded at startup or at a command
