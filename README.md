@@ -25,7 +25,7 @@ If you only use 1 world, this plugin is not necessary
 
 Progress: 75%
 
-See or [project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
+See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
 
 # Commands
 
