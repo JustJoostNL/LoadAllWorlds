@@ -60,8 +60,8 @@ See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for mor
 
  Version: 0.0.7
  
- Download: You can download the lastest release [here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
+ Download: You can download the lastest release [Here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
  
- For installation info go to the [wiki](https://github.com/koningcool/loadallworlds/wiki)
+ For installation info go to the [Wiki](https://github.com/koningcool/loadallworlds/wiki)
  
  
