@@ -58,7 +58,7 @@ See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for mor
  
  Author: koningcool
 
- Version: 0.0.7
+ Version: 0.0.8
  
  Download: You can download the lastest release [Here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
  
