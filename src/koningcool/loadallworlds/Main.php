@@ -54,6 +54,7 @@ class Main extends PluginBase{
             $this->getConfig()->get("load-on-startup");
 
         }
+        }
     }
 
     public function onDisable() : void{
