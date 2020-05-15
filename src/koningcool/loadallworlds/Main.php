@@ -30,10 +30,11 @@ class Main extends PluginBase{
         }    
     }    
     public function onLoad() : void{
-            $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");}
+            //$this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
+    }
 
     public function onEnable() : void{
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
+        //$this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         if (file_exists($this->getDataFolder() . "config.yml")){
             $this->getLogger()->info(TextFormat::DARK_GREEN . $this->getConfig()->get("load-on-startup"));
             if($this->getConfig()->get("load-on-startup") === true){
@@ -58,7 +59,8 @@ class Main extends PluginBase{
     }
 
     public function onDisable() : void{
-        $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");}
+        //$this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
+    }
         
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
         switch($command->getName()){
