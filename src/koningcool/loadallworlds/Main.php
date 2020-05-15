@@ -20,9 +20,7 @@ interface PluginIdentifiableCommand{
 
 
 class Main extends PluginBase{
-     /** @var Config */
-    public $myConfig;
-    public $cfg;  
+       
 
     private function loadWorlds() : void{
         foreach(array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName){
