@@ -28,10 +28,10 @@ class Main extends PluginBase{
         }    
     }    
     public function onLoad() : void{
-            $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");}
+            $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!, Author: koningcool");}
 
     public function onEnable() : void{
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!, Author: koningcool");
      
     }  
     
@@ -42,7 +42,7 @@ class Main extends PluginBase{
     
 
     public function onDisable() : void{
-        $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");}
+        $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!, Author: koningcool");}
         
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
         switch($command->getName()){
