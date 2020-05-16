@@ -21,11 +21,24 @@ If you only use 1 world, this plugin is not necessary
 
 # ToDo
 
-* [ ] Implementing config.yml with the option to load all the worlds on startup or with a command.
+Implementing config.yml with the option to load all the worlds on startup or with a command.
 
-Progress: 75%
+  - Progress: 90%
 
-See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
+  - See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
+
+ 
+ # Issues
+
+ At the moment there are no problems!
+
+ If you have a problem you can report it [here](https://github.com/koningcool/LoadAllWorlds/issues/new)
+ 
+![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)
+
+# Ideas
+
+If you have nice ideas, Create your own code and then you can create a pull request [here](https://github.com/koningcool/LoadAllWorlds/pulls)
 
 # Commands
 
@@ -47,11 +60,6 @@ See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for mor
 
  loadallworlds.command
  
- # Issues
-
-- At the moment there are no problems!
- 
-![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)
 
 # Info
  Name: LoadAllWorlds
