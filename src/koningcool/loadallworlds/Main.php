@@ -28,7 +28,6 @@ class Main extends PluginBase
             if ($this->getServer()->loadLevel($levelName));
         }
     }
-    
     public function onLoad() : void
     {
         //$this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
@@ -37,6 +36,11 @@ class Main extends PluginBase
     public function onEnable() : void
     {
         //$this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
+        $this->saveDefaultConfig();
+        $this->reloadConfig();
+        if ($this->getConfig()->get("load-on-startup") === true) {
+            $this->loadWorlds();
+        }
     }
 
     public function onDisable() : void
