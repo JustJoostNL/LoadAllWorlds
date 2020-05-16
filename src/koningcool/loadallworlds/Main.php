@@ -40,23 +40,10 @@ class Main extends PluginBase
     public function onEnable() : void
     {
         //$this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
-        if (file_exists($this->getDataFolder() . "config.yml")) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . $this->getConfig()->get("load-on-startup"));
-            if ($this->getConfig()->get("load-on-startup") === true) {
-                @mkdir($this->getDataFolder());
-                $this->saveDefaultConfig();
-                $this->cfg = $this->getConfig()->getAll();
-                if ($this->cfg["load-on-startup"] === true) {
-                    $this->getLogger()->info(TextFormat::DARK_GREEN . "true");
-                    $this->loadWorlds();
-                }
-            } else {
-                @mkdir($this->getDataFolder());
-                $this->saveResource("config.yml");
-                $this->myConfig = new Config($this->getDataFolder() . "config.yml", Config::YAML);
-                $this->saveDefaultConfig();
-                $this->getConfig()->get("load-on-startup");
-            }
+        $this->saveDefaultConfig();
+        $this->reloadConfig();
+        if ($this->getConfig()->get("load-on-startup") === true) {
+            $this->loadWorlds();
         }
     }
 
