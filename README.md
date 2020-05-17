@@ -21,11 +21,7 @@ If you only use 1 world, this plugin is not necessary
 
 # ToDo
 
-Implementing config.yml with the option to load all the worlds on startup or with a command.
-
-  - Progress: 98%
-
-  - See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
+At the moment is there nothing on the ToDo list!
 
  
  # Issues
@@ -66,7 +62,7 @@ If you have nice ideas, Create your own code and then you can create a pull requ
  
  Author: koningcool
 
- Version: 0.0.8
+ Version: 1.0.0
  
  Download: You can download the lastest release [Here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
  
