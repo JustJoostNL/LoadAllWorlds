@@ -26,7 +26,7 @@ class Main extends PluginBase
     {
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             if ($this->getServer()->loadLevel($levelName));
-        }
+        } //
     }
     public function onLoad() : void
     {
