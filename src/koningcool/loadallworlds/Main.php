@@ -22,10 +22,18 @@ interface PluginIdentifiableCommand
 
 class Main extends PluginBase
 {
+    private $allWorldsLoaded;
     private function loadWorlds() : void
     {
+        $allWorldsLoaded=true;
+        
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
-            if ($this->getServer()->loadLevel($levelName));
+            if (!$this->getServer()->loadLevel($levelName)) {
+                $allWorldsLoaded=false;
+            }
+        }
+        if ($allWorldsLoaded===true) {
+            $this->getLogger()->info(TextFormat::DARK_RED . "All worlds are already loaded!");
         }
     }
     public function onLoad() : void
