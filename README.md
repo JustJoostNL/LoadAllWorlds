@@ -1,8 +1,8 @@
    # LoadAllWorlds
 
-| HitCount | License | Poggit | Release | Github Release Downloads |
+| HitCount | License | Poggit | Release | Total Downloads |
 |:--:|:--:|:--:|:--:|:--:|
-|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)|  ![Github Release Downloads](https://img.shields.io/github/downloads/koningcool/LoadAllWorlds/total.svg)
+|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)|  ![Total Downloads]((https://poggit.pmmp.io/shield.dl/LoadAllWorlds)
 
 
 # General
@@ -23,7 +23,7 @@ If you only use 1 world, this plugin is not necessary
 
 Implementing config.yml with the option to load all the worlds on startup or with a command.
 
-  - Progress: 90%
+  - Progress: 95%
 
   - See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
 
