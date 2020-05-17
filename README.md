@@ -2,7 +2,7 @@
 
 | HitCount | License | Poggit | Release | Total Downloads |
 |:--:|:--:|:--:|:--:|:--:|
-|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)| [Total Downloads] (https://poggit.pmmp.io/shield.dl/LoadAllWorlds)
+|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)| ![Total Downloads](https://poggit.pmmp.io/shield.dl/LoadAllWorlds)
 
 
 # General
@@ -23,7 +23,7 @@ If you only use 1 world, this plugin is not necessary
 
 Implementing config.yml with the option to load all the worlds on startup or with a command.
 
-  - Progress: 95%
+  - Progress: 98%
 
   - See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
 
@@ -32,7 +32,7 @@ Implementing config.yml with the option to load all the worlds on startup or wit
 
  At the moment there are no problems!
 
- If you have a problem you can report it [here](https://github.com/koningcool/LoadAllWorlds/issues/new)
+ If you have a problem you can report it [Here](https://github.com/koningcool/LoadAllWorlds/issues/new)
  
 ![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)
 
