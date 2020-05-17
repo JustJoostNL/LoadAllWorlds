@@ -21,7 +21,7 @@ If you only use 1 world, this plugin is not necessary
 
 # ToDo
 
-At the moment is there nothing on the ToDo list!
+At the moment there is nothing on the ToDo list!
 
  
  # Issues
