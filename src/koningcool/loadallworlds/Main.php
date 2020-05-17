@@ -34,7 +34,6 @@ class Main extends PluginBase
         }
         if ($allWorldsLoaded===true) {
             $this->getLogger()->info(TextFormat::DARK_RED . "All worlds are already loaded!");
-            //
         }
     }
     public function onLoad() : void
