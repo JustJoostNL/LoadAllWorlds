@@ -32,7 +32,7 @@ Implementing config.yml with the option to load all the worlds on startup or wit
 
  At the moment there are no problems!
 
- If you have a problem you can report it [here](https://github.com/koningcool/LoadAllWorlds/issues/new)
+ If you have a problem you can report it [Here](https://github.com/koningcool/LoadAllWorlds/issues/new)
  
 ![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)
 
