@@ -23,7 +23,7 @@ If you only use 1 world, this plugin is not necessary
 
 Implementing config.yml with the option to load all the worlds on startup or with a command.
 
-  - Progress: 95%
+  - Progress: 98%
 
   - See or [Project](https://github.com/koningcool/loadallworlds/projects/1) for more information!
 
