@@ -4,6 +4,6 @@ branches:
 - master
 projects:
   loadallworlds:
-    icon: icon.gif
     path: ""
+    icon: "icon.gif"
 ...
