@@ -40,21 +40,21 @@ If you have nice ideas, Create your own code and then you can create a pull requ
 
  Use 1 of this following commands to load all the worlds in the server!
 
- /loadall
+ `/loadall`
  
- /loadallworlds
+ `/loadallworlds`
  
- /loadworlds
+ `/loadworlds`
  
- /worldloader
+ `/worldloader`
  
- /law
+ `/law`
 
 # Permissions
 
  The permission to use the command:
 
- loadallworlds.command
+ `loadallworlds.command`
  
 
 # Info
