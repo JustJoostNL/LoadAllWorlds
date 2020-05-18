@@ -34,7 +34,7 @@ At the moment there is nothing on the ToDo list!
 
 # Ideas
 
-If you have nice ideas, Create your own code and then you can create a pull request [here](https://github.com/koningcool/LoadAllWorlds/pulls)
+If you have nice ideas, Create your own code and then you can create a pull request [Here](https://github.com/koningcool/LoadAllWorlds/pulls)
 
 # Commands
 
