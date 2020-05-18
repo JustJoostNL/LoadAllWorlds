@@ -8,11 +8,15 @@
 # General
 This is a plugin that adds a command to load all the worlds.
 
-In this plugin you only load the worlds when you execute a command. And not when starting the server.
+If you want that all the worlds load at startup, Set "load-on-startup" "true" in the config.yml
 
-Because if you do not use a world, is it waste of your memory.
+In this plugin you can choose whether you want, To load all worlds at startup or with a command.
 
-This is a very easy plugin but its very helpful!
+If you are not using the worlds yet, It is wise to execute a command because you will save memory.
+
+But you can choose yourself!
+
+This is an easy plugin but very useful!
 
 
 # Important
