@@ -68,7 +68,7 @@ If you have nice ideas, Create your own code and then you can create a pull requ
 
  Version: 1.0.0
  
- Download: Click [Here](https://poggit.pmmp.io/p/LoadAllWorlds/) and then on "direct download"
+ Download: Click [Here](https://poggit.pmmp.io/p/LoadAllWorlds/) and then on "Direct Download"
  
  
  
