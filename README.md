@@ -70,8 +70,6 @@ If you have nice ideas, Create your own code and then you can create a pull requ
  
  Download: Click [Here](https://poggit.pmmp.io/p/LoadAllWorlds/) and then on "Direct Download"
  
- 
- 
  For installation info go to the [Wiki](https://github.com/koningcool/loadallworlds/wiki)
  
  
