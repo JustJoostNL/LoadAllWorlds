@@ -27,7 +27,6 @@ class Main extends PluginBase
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             $this->getServer()->loadLevel($levelName);
         }
-        $this->getLogger()->info(TextFormat::DARK_RED . "All worlds are loaded!");
     }
     public function onLoad() : void
     {
@@ -54,6 +53,7 @@ class Main extends PluginBase
         switch ($command->getName()) {
             case "loadall":
                 $this->loadWorlds();
+                $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
         }
         return true;
     }
