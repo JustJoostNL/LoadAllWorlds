@@ -51,10 +51,10 @@ class Main extends PluginBase
     {
         switch ($command->getName()) {
             case "loadall":
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Levels loaded: " . count($this->server->getLevels()));
+                $this->getLogger()->info(TextFormat::DARK_GREEN . "Levels loaded: " . count($this->getServer()->getLevels()));
                 $this->loadWorlds();
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Levels loaded: " . count($this->server->getLevels()));
+                $this->getLogger()->info(TextFormat::DARK_GREEN . "Levels loaded: " . count($this->getServer()->getLevels()));
         }
         return true;
     }
