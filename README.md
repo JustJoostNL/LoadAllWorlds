@@ -66,7 +66,7 @@ If you have nice ideas, Create your own code and then you can create a pull requ
  
  Author: koningcool
 
- Version: 1.0.0
+ Version: 1.0.1
  
  Download: You can download the lastest release [Here](https://poggit.pmmp.io/r/87107/loadallworlds.phar)
  
