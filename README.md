@@ -2,17 +2,21 @@
 
 | HitCount | License | Poggit | Release Status | Total Downloads |
 |:--:|:--:|:--:|:--:|:--:|
-|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)| ![Total Downloads](https://poggit.pmmp.io/shield.dl/LoadAllWorlds)
+|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)| ![Total Downloads](https://poggit.pmmp.io/shield.dl.total/LoadAllWorlds)
 
 
 # General
 This is a plugin that adds a command to load all the worlds.
 
-In this plugin you only load the worlds when you execute a command. And not when starting the server.
+If you want that all the worlds load at startup, Set "load-on-startup" "true" in the config.yml
 
-Because if you do not use a world, is it waste of your memory.
+In this plugin you can choose whether you want, To load all worlds at startup or with a command.
 
-This is a very easy plugin but its very helpful!
+If you are not using the worlds yet, It is wise to execute a command because you will save memory.
+
+But you can choose yourself!
+
+This is an easy plugin but very useful!
 
 
 # Important
@@ -34,27 +38,27 @@ At the moment there is nothing on the ToDo list!
 
 # Ideas
 
-If you have nice ideas, Create your own code and then you can create a pull request [here](https://github.com/koningcool/LoadAllWorlds/pulls)
+If you have nice ideas, Create your own code and then you can create a pull request [Here](https://github.com/koningcool/LoadAllWorlds/pulls)
 
 # Commands
 
  Use 1 of this following commands to load all the worlds in the server!
 
- /loadall
+ `/loadall`
  
- /loadallworlds
+ `/loadallworlds`
  
- /loadworlds
+ `/loadworlds`
  
- /worldloader
+ `/worldloader`
  
- /law
+ `/law`
 
 # Permissions
 
  The permission to use the command:
 
- loadallworlds.command
+ `loadallworlds.command`
  
 
 # Info
@@ -64,7 +68,9 @@ If you have nice ideas, Create your own code and then you can create a pull requ
 
  Version: 1.0.0
  
- Download: You can download the lastest release [Here](https://poggit.pmmp.io/r/86466/loadallworlds.phar)
+ Download: Click [Here](https://poggit.pmmp.io/p/LoadAllWorlds/) and then on "Direct Download"
+ 
+ 
  
  For installation info go to the [Wiki](https://github.com/koningcool/loadallworlds/wiki)
  

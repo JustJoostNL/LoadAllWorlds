@@ -4,6 +4,6 @@ branches:
 - master
 projects:
   loadallworlds:
-    icon: icon.png
     path: ""
+    icon: "icon.png"
 ...
