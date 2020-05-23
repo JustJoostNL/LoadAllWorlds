@@ -66,11 +66,11 @@ If you have nice ideas, Create your own code and then you can create a pull requ
  
  Author: koningcool
 
- Version: 1.0.0
+ Version: 1.0.1
+
+ Poggit Builds: If you want to see al the builds click [Here](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/loadallworlds) (NOT AL THE BUILDS ARE STABLE!!!)
  
  Download: Click [Here](https://poggit.pmmp.io/p/LoadAllWorlds/) and then on "Direct Download"
- 
- 
  
  For installation info go to the [Wiki](https://github.com/koningcool/loadallworlds/wiki)
  
