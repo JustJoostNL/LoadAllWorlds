@@ -19,7 +19,6 @@ interface PluginIdentifiableCommand
     public function getPlugin() : Plugin;
 }
 
-
 class Main extends PluginBase
 {
     private function loadWorlds() : void
