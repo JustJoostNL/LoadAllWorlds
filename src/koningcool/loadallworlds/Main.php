@@ -19,7 +19,6 @@ interface PluginIdentifiableCommand
     public function getPlugin() : Plugin;
 }
 
-
 class Main extends PluginBase
 {
     private function loadWorlds() : void
@@ -27,7 +26,6 @@ class Main extends PluginBase
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             $this->getServer()->loadLevel($levelName);
         }
-        $this->getLogger()->info(TextFormat::DARK_RED . "All worlds are loaded!");
     }
     public function onLoad() : void
     {
