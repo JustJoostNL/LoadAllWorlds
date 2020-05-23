@@ -54,6 +54,7 @@ class Main extends PluginBase
         switch ($command->getName()) {
             case "loadall":
                 $this->loadWorlds();
+                $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
         }
         return true;
     }
