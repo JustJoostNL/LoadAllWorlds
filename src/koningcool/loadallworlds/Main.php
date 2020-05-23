@@ -57,7 +57,7 @@ class Main extends PluginBase
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
                 $loadedLevelsAfter = count($this->getServer()->getLevels());
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
-                if  $loadedLevelsBefore > $loadedLevelsAfter {
+                if ($loadedLevelsBefore > $loadedLevelsAfter) {
                     $this->getLogger()->info(TextFormat::DARK_GREEN . "Extra Worlds loaded: " . $loadedLevelsBefore-$loadedLevelsAfter);
                 } else {
                     $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
