@@ -53,7 +53,7 @@ class Main extends PluginBase
             case "loadall":
                 $loadedLevelsBefore = intval(count($this->getServer()->getLevels()));
                 //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
-                $this->loadWorlds();<<<<<<< TweakM
+                $this->loadWorlds();
                 //$this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
                 $loadedLevelsAfter = intval(count($this->getServer()->getLevels()));
                 //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
