@@ -19,7 +19,6 @@ interface PluginIdentifiableCommand
     public function getPlugin() : Plugin;
 }
 
-
 class Main extends PluginBase
 {
     private function loadWorlds() : void
@@ -27,7 +26,6 @@ class Main extends PluginBase
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             $this->getServer()->loadLevel($levelName);
         }
-        $this->getLogger()->info(TextFormat::DARK_RED . "All worlds are loaded!");
     }
     public function onLoad() : void
     {
@@ -53,8 +51,21 @@ class Main extends PluginBase
     {
         switch ($command->getName()) {
             case "loadall":
-                $this->loadWorlds();
+                $loadedLevelsBefore = intval(count($this->getServer()->getLevels()));
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
+                $this->loadWorlds();<<<<<<< TweakM
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
+                $loadedLevelsAfter = intval(count($this->getServer()->getLevels()));
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
+                //$loadedLevelsDiff = $loadedLevelsAfter - $loadedLevelsBefore;
+                if ($loadedLevelsAfter > $loadedLevelsBefore) {
+                    $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded.");
+                } else {
+                    $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
+                }
+
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
+
         }
         return true;
     }
