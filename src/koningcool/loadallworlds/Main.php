@@ -52,14 +52,14 @@ class Main extends PluginBase
         switch ($command->getName()) {
             case "loadall":
                 $loadedLevelsBefore = intval(count($this->getServer()->getLevels()));
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
                 $this->loadWorlds();
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
                 $loadedLevelsAfter = intval(count($this->getServer()->getLevels()));
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
-                $loadedLevelsDiff = $loadedLevelsAfter - $loadedLevelsBefore;
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
+                //$loadedLevelsDiff = $loadedLevelsAfter - $loadedLevelsBefore;
                 if ($loadedLevelsAfter > $loadedLevelsBefore) {
-                    $this->getLogger()->info(TextFormat::DARK_GREEN . "Extra Worlds loaded: " . $loadedLevelsDiff);
+                    //$this->getLogger()->info(TextFormat::DARK_GREEN . "Extra Worlds loaded: " . $loadedLevelsDiff);
                 } else {
                     $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
                 }
