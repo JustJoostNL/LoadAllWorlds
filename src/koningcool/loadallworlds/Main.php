@@ -51,13 +51,13 @@ class Main extends PluginBase
     {
         switch ($command->getName()) {
             case "loadall":
-                $loadedLevelsBefore = count($this->getServer()->getLevels());
+                $loadedLevelsBefore = (int)count($this->getServer()->getLevels());
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
                 $this->loadWorlds();
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
-                $loadedLevelsAfter = count($this->getServer()->getLevels());
+                $loadedLevelsAfter = (int)count($this->getServer()->getLevels());
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
-                if ($loadedLevelsBefore < $loadedLevelsAfter) {
+                if ($loadedLevelsAfter > $loadedLevelsBefore) {
                     $this->getLogger()->info(TextFormat::DARK_GREEN . "Extra Worlds loaded: " . $loadedLevelsBefore-$loadedLevelsAfter);
                 } else {
                     $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
