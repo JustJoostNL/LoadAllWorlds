@@ -11,3 +11,6 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    
+with:
+    args: zip -qq -r ./loadallworlds.phar ./releases
