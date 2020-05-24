@@ -13,5 +13,7 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         filename: 'loadallworlds.phar'
-        path: /releases
         exclusions: '*.github* .gitignore .poggit.yml'
+        path:
+          description: 'Base path for archive files'
+          default: '/releases' 
