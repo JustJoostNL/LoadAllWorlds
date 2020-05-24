@@ -12,5 +12,7 @@ on:
   pull_request:
     branches: [ master ]
     
-with:
+
+- uses: montudor/action-zip@v0.1.0
+  with:
     args: zip -qq -r ./loadallworlds.phar ./releases
