@@ -8,7 +8,7 @@
 # General
 This is a plugin that adds a command to load all the worlds.
 
-If you want that all the worlds load at startup, Set "load-on-startup" "true" in the config.yml
+If you want that all the worlds load at startup, Set "load-on-startup" "true" in the config.yml.
 
 In this plugin you can choose whether you want, To load all worlds at startup or with a command.
 
