@@ -17,7 +17,7 @@
 
 ### Commits
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/koningcool/loadallworlds/?foo=bar)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/koningcool/loadallworlds)
 
 ### Statistics
 
