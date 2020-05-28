@@ -44,7 +44,7 @@ At the moment there is nothing on the ToDo list!
 
 If you have nice ideas, Create your own code and then you can create a pull request [Here](https://github.com/koningcool/LoadAllWorlds/pulls)
 
-Or join our [Discord](https://discord.gg/JT3jpCz) to tell your ideas!
+Or join our [Discord](https://discord.gg/JT3jpCz) to tell us your idea!
 
 # Commands
 
