@@ -36,11 +36,15 @@ At the moment there is nothing on the ToDo list!
 
  If you have a problem you can report it [Here](https://github.com/koningcool/LoadAllWorlds/issues/new)
  
+ Or join our [Discord](https://discord.gg/JT3jpCz) to report a problem
+ 
 ![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)
 
 # Ideas
 
 If you have nice ideas, Create your own code and then you can create a pull request [Here](https://github.com/koningcool/LoadAllWorlds/pulls)
+
+Or join our [Discord](https://discord.gg/JT3jpCz) to tell your ideas!
 
 # Commands
 
