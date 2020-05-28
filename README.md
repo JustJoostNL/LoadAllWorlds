@@ -7,8 +7,6 @@
 For all the badges click [Here](https://github.com/koningcool/LoadAllWorlds/blob/master/shields-badges.md)
 
 
-
-
 # General
 This is a plugin that adds a command to load all the worlds.
 
