@@ -17,9 +17,7 @@
 
 ### Commits
 
-![GitHub commit activity (Yearly)](https://img.shields.io/github/commit-activity/y/koningcool/loadallworlds)
 ![GitHub commit activity (Monthly)](https://img.shields.io/github/commit-activity/m/koningcool/loadallworlds)
-![GitHub commit activity (Weekly)](https://img.shields.io/github/commit-activity/w/koningcool/loadallworlds)
 
 ### Statistics
 
