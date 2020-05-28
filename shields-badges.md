@@ -5,3 +5,6 @@
 [![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)
  ![Total Downloads](https://poggit.pmmp.io/shield.dl.total/LoadAllWorlds)
  [![Discord](https://img.shields.io/discord/714455937691287602.svg?style=flat-square&label=discord&colorB=7289da)](https://discord.gg/JT3jpCz)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/koningcool/loadallworlds)
+
