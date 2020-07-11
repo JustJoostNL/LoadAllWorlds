@@ -6,7 +6,7 @@
 #   Separate the worlds with a comma, use double quotes (") when a world name includes spaces
 #   (Leave this blank if you don't want to exclude anything)
 #   Example: - exclude ["water world","excluded"]
-on startup:
+on-startup:
 - load-worlds: false
 - exclude: []
 
@@ -15,5 +15,8 @@ on startup:
 #   Separate the worlds with a comma, use double quotes (") when a world name includes spaces
 #   (Leave this blank if you don't want to exclude anything)
 #   Example: - exclude ["water world","excluded"]
-on command:
+on-command:
 - exclude: []
+
+# Debug mode (true or false)
+debug: false
