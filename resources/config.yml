@@ -1,4 +1,16 @@
+#-STARTUP
+
 # Set this true if you want to load all the worlds at startup
-# If it is false then you need to run the /loadall command
+# If it is false then you need to run the /loadall command to load all the worlds!
 # You can only use true or false!
 load-on-startup: false
+# Exclude the worlds you don't want to load at startup here!
+#Separate the worlds with a comma.
+#(Leave this blank if you don't want to exclude anything!)
+exclude-worlds-loading-at-startup:
+
+#-COMMAND
+#Exclude the worlds here you don't want to load when executing the command "loadworlds"
+#Separate the worlds with a comma.
+#(Leave this blank if you don't want to exclude anything!)
+exclude-worlds-loading-by-running-the-command:
