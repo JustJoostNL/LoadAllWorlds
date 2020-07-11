@@ -7,7 +7,7 @@
 #   (Leave this blank if you don't want to exclude anything)
 #   Example: - exclude ["water world","excluded"]
 on startup:
-- load-all: false
+- load-worlds: false
 - exclude: []
 
 #- ON COMMAND
