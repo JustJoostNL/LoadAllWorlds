@@ -51,10 +51,22 @@ class Main extends PluginBase
     {
         switch ($command->getName()) {
             case "loadall":
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Levels loaded: " . count($this->getServer()->getLevels()));
+                $loadedLevelsBefore = intval(count($this->getServer()->getLevels()));
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
                 $this->loadWorlds();
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
+                $loadedLevelsAfter = intval(count($this->getServer()->getLevels()));
+                //$this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
+                //$loadedLevelsDiff = $loadedLevelsAfter - $loadedLevelsBefore;
+                if ($loadedLevelsAfter > $loadedLevelsBefore) {
+                    $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded.");
+                } else {
+                    $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
+                    //test
+                }
+
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Levels loaded: " . count($this->getServer()->getLevels()));
+
         }
         return true;
     }
