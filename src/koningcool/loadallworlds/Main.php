@@ -89,7 +89,8 @@ class Main extends PluginBase
         }
         $this->saveDefaultConfig();
         $this->reloadConfig();
-        if ($this->getConfig()["on-startup"]["load-worlds"] === true) {
+        $configLoadWorlds = $this->getConfig()->get("on-startup");
+        if ($configLoadWorlds["load-worlds"] === true) {
             $this->loadWorlds("on-load", false); # use on-load exclude list
         }
         $this->debugMode = $this->getConfig()->get("debug");
