@@ -33,10 +33,10 @@ class Main extends PluginBase
         # Get appropriate exclude list (on-load, on-command, default = no list)
         switch ($excludelist) {
             case "on-load":
-                $exclude = $this->getConfig()->get("on-startup")["exclude"];
+                $exclude = $this->getConfig()["on-startup"]["exclude"];
                 break;
             case "on-command":
-                $exclude = $this->getConfig()->get("on-command")["exclude"];
+                $exclude = $this->getConfig()["on-command"]["exclude"];
                 break;
             default:
                 $exclude = "";
@@ -89,7 +89,7 @@ class Main extends PluginBase
         }
         $this->saveDefaultConfig();
         $this->reloadConfig();
-        if ($this->getConfig()->get("on-startup")["load-worlds"] === true) {
+        if ($this->getConfig()["on-startup"]["load-worlds"] === true) {
             $this->loadWorlds("on-load", false); # use on-load exclude list
         }
         $this->debugMode = $this->getConfig()->get("debug");
