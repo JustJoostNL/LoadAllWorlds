@@ -8,7 +8,7 @@
 #   Example: - exclude ["water world","excluded"]
 on-startup:
 - load-worlds: false
-- exclude: []
+- exclude: "testworld,noworld"
 
 #- ON COMMAND
 # Exclude the worlds here you don't want to load when executing the command /loadworlds
@@ -16,7 +16,7 @@ on-startup:
 #   (Leave this blank if you don't want to exclude anything)
 #   Example: - exclude ["water world","excluded"]
 on-command:
-- exclude: []
+- exclude: "testworld,noworld"
 
 # Debug mode (true or false)
-debug: false
+debug: true
