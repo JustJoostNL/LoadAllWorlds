@@ -43,10 +43,14 @@ class Main extends PluginBase
                 break;
         }
 
+        if ($this->debugMode === true) {
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
+        }
+
         # Load the levels
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             # Only load level if not in exclude list, which can be empty
-            if (!in_array($levelName, $exclude)) {
+            if (!strpos($exclude, $levelName)) {
                 $this->getServer()->loadLevel($levelName);
             }
         }
