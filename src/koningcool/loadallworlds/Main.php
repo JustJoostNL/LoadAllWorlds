@@ -33,10 +33,10 @@ class Main extends PluginBase
         # Get appropriate exclude list (on-load, on-command, default = no list)
         switch ($excludelist) {
             case "on-load":
-                $exclude = $this->getConfig()->getnested("on-startup.exclude");
+                $exclude = $this->getConfig()->getNested("on-startup.exclude");
                 break;
             case "on-command":
-                $exclude = $this->getConfig()->getnested("on-command.exclude");
+                $exclude = $this->getConfig()->getNested("on-command.exclude");
                 break;
             default:
                 $exclude = "";
@@ -44,6 +44,7 @@ class Main extends PluginBase
         }
 
         if ($this->debugMode === true) {
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
         }
 
@@ -56,26 +57,22 @@ class Main extends PluginBase
         }
 
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Fishished loading worlds.");
         }
         $loadedLevelsAfter = intval(count($this->getServer()->getLevels()));
+
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
-        if ($this->debugMode === true) {
-            $loadedLevelsDiff = $loadedLevelsAfter - $loadedLevelsBefore;
-        }
+
         if ($loadedLevelsAfter > $loadedLevelsBefore) {
             if ($showInfo === true) {
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded.");
+                $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
             }
         } else {
             if ($showInfo === true) {
                 $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
             }
-        }
-        if ($showInfo === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "All worlds are loaded!");
         }
     }
 
@@ -94,7 +91,7 @@ class Main extends PluginBase
         $this->saveDefaultConfig();
         $this->reloadConfig();
         
-        if ($this->getConfig()->getnested("on-startup.load-worlds") === true) {
+        if ($this->getConfig()->getNested("on-startup.load-worlds") === true) {
             $this->loadWorlds("on-load", false); # use on-load exclude list
         }
         $this->debugMode = $this->getConfig()->get("debug");
