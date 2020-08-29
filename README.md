@@ -8,16 +8,16 @@ For all the badges click [Here](https://github.com/koningcool/LoadAllWorlds/blob
 
 
 # General
-This is a plugin that adds a command to load all the worlds.
+This is a plugin that adds commands to load worlds, and can be configured to load worlds on startup.
 
-If you want that all the worlds load at startup, Set "load-on-startup" "true" in the config.yml.
+If you want to load worlds at startup, set "load-worlds" "true" in the config.yml.
+If you want to load worlds using a command, use /loadworlds. This will load all worlds, except the worlds that are excluded.
+If you want to load all worlds using a command (including the ones that are normally excluded), use /loadallworlds.
 
-In this plugin you can choose whether you want, To load all worlds at startup or with a command.
+You can exclude worlds from loading at startup or from loading with /loadworlds, using the [config.yml](https://github.com/koningcool/LoadAllWorlds/blob/master/resources/config.yml).
 
-If you are not using the worlds yet, It is wise to execute a command because you will save memory.
-
+If you are not using all worlds that you have at the same time, it is wise to use this plugin to save memory.
 But you can choose yourself!
-
 This is an easy plugin but very useful!
 
 
@@ -48,31 +48,31 @@ Or join our [Discord](https://discord.gg/JT3jpCz) to tell us your idea!
 
 # Commands
 
- Use 1 of this following commands to load all the worlds in the server!
+ Use 1 of these following commands to load all the worlds in the server!
 
  `/loadall`
  
  `/loadallworlds`
  
- `/loadworlds`
- 
- `/worldloader`
- 
  `/law`
+
+ Use this command to load all worlds except the ones that are excluded in the config.yml
+
+`/loadworlds`
 
 # Permissions
 
  The permission to use the command:
 
  `loadallworlds.command`
+ `loadallworlds.loadworlds.command`
  
-
 # Info
  Name: LoadAllWorlds
  
  Author: koningcool
 
- Version: 1.0.1
+ Version: 1.1.0
  
  Discord: Click [Here](https://discord.gg/JT3jpCz) for my discord!
 
