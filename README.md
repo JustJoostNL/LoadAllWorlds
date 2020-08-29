@@ -65,6 +65,7 @@ Or join our [Discord](https://discord.gg/JT3jpCz) to tell us your idea!
  The permission to use the command:
 
  `loadallworlds.command`
+ 
  `loadallworlds.loadworlds.command`
  
 # Info
