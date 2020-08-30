@@ -74,6 +74,7 @@ class Main extends PluginBase
 
     public function onLoad() : void
     {
+        $this->saveDefaultConfig();
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
@@ -84,18 +85,14 @@ class Main extends PluginBase
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         }
-        $this->saveDefaultConfig();
         $this->reloadConfig();
         $this->configData = $this->getConfig()->getAll();
-       
-        if ($this->configData["on-startup"]["load-worlds"] === true) {
-            $this->loadWorlds("on-load", false); # use on-load exclude list
-        }
-        $this->debugMode = $this->getConfig()->get("debug");
+        $this->migrateConfig();
     }
 
     public function onDisable() : void
     {
+        $this->getConfig()->save();
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
         }
@@ -112,5 +109,30 @@ class Main extends PluginBase
                 break;
         }
         return true;
+    }
+
+    private function migrateConfig(): void
+    {
+        if (array_key_exists("config-version", $this->configData)) {
+            if ($this->configData["config-version"] === 2) {
+                if ($this->configData["on-startup"]["load-worlds"] === true) {
+                    $this->loadWorlds("on-load", false); # use on-load exclude list
+                }
+                $this->debugMode = $this->getConfig()->get("debug");
+            }
+        } else {
+            # Remove old config file
+            unlink($this->getConfig()->getPath());
+            # Write new config file (default)
+            $this->saveDefaultConfig();
+            $this->reloadConfig();
+            # Set old value in new config and set default empty exclude list
+            $oldvalue = array("load-worlds" => $this->configData["load-on-startup"], "exclude" => "");
+            $this->getConfig()->set("on-startup", $oldvalue);
+            # Save config
+            $this->getConfig()->save();
+            # Get the new config data in local storage
+            $this->configData = $this->getConfig()->getAll();
+        }
     }
 }

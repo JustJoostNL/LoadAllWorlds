@@ -6,10 +6,10 @@ api: 3.12.0
 
 commands:
   loadworlds:
-    description: Load all the worlds in the server! (Excludes the specified worlds in the config.yml!)
+    description: Load the worlds in the server, excluding the specified worlds in the config.yml
     permission: loadallworlds.loadworlds.command
   loadall:
-    description: Load all the worlds in the server!
+    description: Load all the worlds in the server
     permission: loadallworlds.command
     aliases: [loadallworlds,law] 
 ...
