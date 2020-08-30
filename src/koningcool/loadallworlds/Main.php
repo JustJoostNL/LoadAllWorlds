@@ -28,7 +28,7 @@ class Main extends PluginBase
     {
         $loadedLevelsBefore = intval(count($this->getServer()->getLevels()));
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
         }
         
         # Get appropriate exclude list (on-load, on-command, default = no list)
@@ -45,8 +45,8 @@ class Main extends PluginBase
         }
 
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
         }
 
         # Load the levels
@@ -61,14 +61,14 @@ class Main extends PluginBase
         $loadedLevelsAfter = intval(count($this->getServer()->getLevels()));
 
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Fishished loading worlds.");
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Fishished loading worlds.");
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
 
         if (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
         } else {
-            $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
+            $this->getLogger()->debug(TextFormat::DARK_RED . "No extra worlds loaded!");
         }
     }
 
@@ -76,14 +76,14 @@ class Main extends PluginBase
     {
         $this->saveDefaultConfig();
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
+            $this->getLogger()->debug(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
     }
 
     public function onEnable() : void
     {
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         }
         $this->reloadConfig();
         $this->configData = $this->getConfig()->getAll();
@@ -94,7 +94,7 @@ class Main extends PluginBase
     {
         $this->getConfig()->save();
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
+            $this->getLogger()->debug(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
         }
     }
         
