@@ -74,7 +74,6 @@ class Main extends PluginBase
 
     public function onLoad() : void
     {
-        $this->saveDefaultConfig();
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
