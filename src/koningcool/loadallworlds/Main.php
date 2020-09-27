@@ -26,7 +26,7 @@ class Main extends PluginBase
     
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
-        $loadedLevelsBefore = intval(count($this->getServer()->getLevels()));
+        $loadedLevelsBefore = (int)count($this->getServer()->getLevels());
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
         }
@@ -58,7 +58,7 @@ class Main extends PluginBase
             }
         }
 
-        $loadedLevelsAfter = intval(count($this->getServer()->getLevels()));
+        $loadedLevelsAfter = (int)count($this->getServer()->getLevels());
 
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_GREEN . "Fishished loading worlds.");
