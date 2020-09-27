@@ -73,7 +73,7 @@ Or join our [Discord](https://discord.gg/JT3jpCz) to tell us your idea!
  
  Author: koningcool
 
- Version: 1.1.0
+ Version: 1.1.1
  
  Discord: Click [Here](https://discord.gg/JT3jpCz) for my discord!
 
