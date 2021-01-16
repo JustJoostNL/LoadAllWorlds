@@ -5,7 +5,6 @@ namespace koningcool\loadallworlds;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 use function array_diff;
 use function scandir;
@@ -23,14 +22,14 @@ class Main extends PluginBase
 {
     private $debugMode = false;
     private $configData = null;
-    
+
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
         $loadedLevelsBefore = (int)count($this->getServer()->getLevels());
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
         }
-        
+
         # Get appropriate exclude list (on-load, on-command, default = no list)
         switch ($excludelist) {
             case "on-load":
@@ -96,7 +95,7 @@ class Main extends PluginBase
             $this->getLogger()->debug(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
         }
     }
-        
+
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool
     {
         switch ($command->getName()) {
