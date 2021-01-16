@@ -36,7 +36,7 @@ At the moment there is nothing on the ToDo list!
 
  If you have a problem you can report it [Here](https://github.com/koningcool/LoadAllWorlds/issues/new)
  
- Or join our [Discord](https://discord.gg/JT3jpCz) to report a problem
+ Or go to our [Discussions](https://github.com/koningcool/LoadAllWorlds/discussions) tab to report a problem or ask questions.
  
 ![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/koningcool/LoadAllWorlds.svg)
 
@@ -44,7 +44,7 @@ At the moment there is nothing on the ToDo list!
 
 If you have nice ideas, Create your own code and then you can create a pull request [Here](https://github.com/koningcool/LoadAllWorlds/pulls)
 
-Or join our [Discord](https://discord.gg/JT3jpCz) to tell us your idea!
+Or go to our [Discussions](https://github.com/koningcool/LoadAllWorlds/discussions) tab to tell us your idea.
 
 # Commands
 
@@ -74,8 +74,6 @@ Or join our [Discord](https://discord.gg/JT3jpCz) to tell us your idea!
  Author: koningcool
 
  Version: 1.1.1
- 
- Discord: Click [Here](https://discord.gg/JT3jpCz) for my discord!
 
  Poggit Builds: If you want to see al the builds click [Here](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/loadallworlds) (NOT AL THE BUILDS ARE STABLE!!!)
  
