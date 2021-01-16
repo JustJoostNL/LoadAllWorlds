@@ -1,6 +1,6 @@
 ---
 name: LoadAllWorlds
-version: 1.1.1
+version: 1.1.2
 main: koningcool\loadallworlds\Main
 api: 3.12.0
 
