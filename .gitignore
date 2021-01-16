@@ -2,3 +2,6 @@
 /descs
 /releases/
 .vscode/
+/.idea
+/composer.json
+/composer.lock
