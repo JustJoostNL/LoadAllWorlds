@@ -10,7 +10,7 @@ config-version: 2
 #   (Leave this blank if you don't want to exclude anything)
 #   Example: exclude ["waterworld,stupidworld"]
 on-startup:
-  load-worlds: false
+  load-worlds: true
   exclude: ""
 
 #- ON COMMAND
