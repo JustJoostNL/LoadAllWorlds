@@ -7,9 +7,7 @@ api: 4.2.5
 commands:
   loadworlds:
     description: Load the worlds in the server, excluding the specified worlds in the config.yml
-    permission: loadallworlds.loadworlds.command
   loadall:
     description: Load all the worlds in the server
-    permission: loadallworlds.command
     aliases: [loadallworlds,law] 
 ...
