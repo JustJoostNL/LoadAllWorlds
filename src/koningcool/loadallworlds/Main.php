@@ -16,7 +16,7 @@ class Main extends PluginBase
     private bool $debugMode = false;
     private array $configData = [];
 
-    private function loadWorlds(string $excludelist, bool $showInfo) : void
+    private function loadWorlds(string $excludelist) : void
     {
         $loadedLevelsBefore = count($this->getServer()->getWorldManager()->getWorlds());
 
@@ -52,14 +52,6 @@ class Main extends PluginBase
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
 
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "Before: " . $loadedLevelsBefore);
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "After: " . $loadedLevelsAfter);
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo: " . $showInfo);
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo === true: " . ($showInfo === true));
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "Before>After: " . ($loadedLevelsAfter > $loadedLevelsBefore));
-        $this->getLogger()->info(TextFormat::DARK_GREEN . "Before>After && showinfo: " . (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)));
-
-        #if (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)) {
         if ($loadedLevelsAfter > $loadedLevelsBefore) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
         } else {
@@ -102,10 +94,10 @@ class Main extends PluginBase
     {
         switch ($command->getName()) {
             case "loadall":
-                $this->loadWorlds("", true); # do not use any exclude list
+                $this->loadWorlds(""); # do not use any exclude list
                 break;
             case "loadworlds":
-                $this->loadWorlds("on-command", true); # use on-command exclude list
+                $this->loadWorlds("on-command"); # use on-command exclude list
                 break;
         }
         return true;
@@ -115,10 +107,10 @@ class Main extends PluginBase
     {
         if (array_key_exists("config-version", $this->configData)) {
             if ($this->configData["config-version"] === 2) {
-                if ($this->configData["on-startup"]["load-worlds"] === true) {
-                    $this->loadWorlds("on-load", false); # use on-load exclude list
-                }
                 $this->debugMode = $this->getConfig()->get("debug");
+                if ($this->configData["on-startup"]["load-worlds"] === true) {
+                    $this->loadWorlds("on-load"); # use on-load exclude list
+                }
             }
         } else {
             # Remove old config file
