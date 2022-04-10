@@ -25,10 +25,6 @@ class Main extends PluginBase
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
-        if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Command started.");
-        }
-
         $loadedLevelsBefore = count($this->getServer()->getWorldManager()->getWorlds());
 
         if ($this->debugMode === true) {
@@ -59,7 +55,7 @@ class Main extends PluginBase
             # Only load level if not in exclude list, which can be empty
             $excludeArray = explode(",", $exclude);
             if (!in_array($levelName, $excludeArray)) {
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName);
+                # $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName);
                 $this->getServer()->getWorldManager()->loadWorld($levelName);
             }
         }
@@ -67,7 +63,7 @@ class Main extends PluginBase
         $loadedLevelsAfter = count($this->getServer()->getWorldManager()->getWorlds());
 
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Fishished loading worlds.");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Finished loading worlds.");
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
 
