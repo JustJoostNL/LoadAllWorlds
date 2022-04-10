@@ -2,7 +2,7 @@
 
 | HitCount | License | Poggit | Release Status | Total Downloads |
 |:--:|:--:|:--:|:--:|:--:|
-|[![HitCount](http://hits.dwyl.io/koningcool/LoadAllWorlds.svg)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)| ![Total Downloads](https://poggit.pmmp.io/shield.dl.total/LoadAllWorlds)|
+|[![HitCount](https://hits.dwyl.com/koningcool/loadallworlds.svg?style=flat-square)](http://hits.dwyl.io/koningcool/LoadAllWorlds)|[![GitHub license](https://img.shields.io/github/license/koningcool/LoadAllWorlds.svg)](https://github.com/koningcool/LoadAllWorlds/blob/master/LICENSE)|[![Poggit-CI](https://poggit.pmmp.io/ci.shield/koningcool/LoadAllWorlds/LoadallWorlds)](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/LoadAllWorlds)|[![](https://poggit.pmmp.io/shield.state/LoadAllWorlds)](https://poggit.pmmp.io/p/LoadAllWorlds)| ![Total Downloads](https://poggit.pmmp.io/shield.dl.total/LoadAllWorlds)|
 
 For all the badges click [Here](https://github.com/koningcool/LoadAllWorlds/blob/master/shields-badges.md)
 
@@ -76,7 +76,7 @@ Or go to our [Discussions](https://github.com/koningcool/LoadAllWorlds/discussio
  
  Author: koningcool
 
- Version: 1.1.2
+ Version: 1.1.3
 
  Poggit Builds: If you want to see al the builds click [Here](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/loadallworlds) (NOT AL THE BUILDS ARE STABLE!!!)
  
