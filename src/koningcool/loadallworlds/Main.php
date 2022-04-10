@@ -58,10 +58,10 @@ class Main extends PluginBase
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             # Only load level if not in exclude list, which can be empty
             $excludeArray = explode(",", $exclude);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Evaluating world: " . $levelName->getDisplayName());
-            if (!in_array($levelName->getDisplayName(), $excludeArray)) {
-                $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName->getDisplayName());
-                $this->getServer()->getWorldManager()->loadWorld($levelName->getDisplayName());
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Evaluating world: " . $levelName);
+            if (!in_array($levelName, $excludeArray)) {
+                $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName);
+                $this->getServer()->getWorldManager()->loadWorld($levelName);
             }
         }
 
