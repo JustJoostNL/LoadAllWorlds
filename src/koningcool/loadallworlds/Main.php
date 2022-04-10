@@ -23,9 +23,22 @@ class Main extends PluginBase
     private $debugMode = false;
     private $configData = null;
 
+    private function countLoadedWorlds (array $arrWorlds) : int
+    {
+        $numWorlds = 0;
+        foreach ($arrWorlds as $world) {
+            if ($world->isLoaded()) {
+                $numWorlds = $numWorlds +1;
+            }
+        }
+        return  $numWorlds;
+    }
+
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
-        $loadedLevelsBefore = (int)count($this->getServer()->getLevels());
+        $allWorlds = $this->getServer()->getWorldManager()->getWorlds();
+        $loadedLevelsBefore = $this->countLoadedWorlds($allWorlds);
+
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
         }
@@ -49,15 +62,15 @@ class Main extends PluginBase
         }
 
         # Load the levels
-        foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
+        foreach ($allWorlds as $levelName) {
             # Only load level if not in exclude list, which can be empty
             $excludeArray = explode(",", $exclude);
             if (!in_array($levelName, $excludeArray)) {
-                $this->getServer()->loadLevel($levelName);
+                $this->getServer()->getWorldManager()->loadWorld($levelName->getDisplayName());
             }
         }
 
-        $loadedLevelsAfter = (int)count($this->getServer()->getLevels());
+        $loadedLevelsAfter = $this->countLoadedWorlds($allWorlds);
 
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_GREEN . "Fishished loading worlds.");
