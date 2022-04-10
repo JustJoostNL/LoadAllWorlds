@@ -70,14 +70,14 @@ class Main extends PluginBase
             $this->getLogger()->debug(TextFormat::DARK_RED . "No extra worlds loaded!");
         }
     }
-
+    # Load message
     public function onLoad() : void
     {
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
     }
-
+    # Enable message
     public function onEnable() : void
     {
         if ($this->debugMode === true) {
@@ -87,7 +87,7 @@ class Main extends PluginBase
         $this->configData = $this->getConfig()->getAll();
         $this->migrateConfig();
     }
-
+    # Disable message
     public function onDisable() : void
     {
         $this->getConfig()->save();
