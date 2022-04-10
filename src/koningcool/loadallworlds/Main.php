@@ -6,18 +6,9 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
-use pocketmine\plugin\Plugin;
 use JackMD\UpdateNotifier\UpdateNotifier;
 use function array_diff;
 use function scandir;
-
-interface PluginIdentifiableCommand
-{
-    /**
-     * @return Plugin
-     */
-    public function getPlugin() : Plugin;
-}
 
 class Main extends PluginBase
 {
