@@ -10,6 +10,7 @@
     }
   ],
   "require": {
+    "friendsofphp/php-cs-fixer": "^v2.19.3",
     "phpstan/phpstan": "^0.12.18"
   }
 }
