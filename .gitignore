@@ -3,8 +3,6 @@
 /releases/
 .vscode/
 /.idea
-/composer.json
-/composer.lock
 /vendor
 /vendor/
 /vendor/
