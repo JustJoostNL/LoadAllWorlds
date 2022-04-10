@@ -54,6 +54,8 @@ class Main extends PluginBase
 
         $this->getLogger()->info(TextFormat::DARK_GREEN . "Before: " . $loadedLevelsBefore);
         $this->getLogger()->info(TextFormat::DARK_GREEN . "After: " . $loadedLevelsAfter);
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo: " . $showInfo);
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo === true: " . ($showInfo === true));
         $this->getLogger()->info(TextFormat::DARK_GREEN . "Before>After: " . ($loadedLevelsAfter > $loadedLevelsBefore));
         $this->getLogger()->info(TextFormat::DARK_GREEN . "Before>After && showinfo: " . (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)));
 
