@@ -7,7 +7,7 @@
 For all the badges click [Here](https://github.com/koningcool/LoadAllWorlds/blob/master/shields-badges.md)
 
 
-If you use minecraft java: please check out my other plugins!: https://github.com/koningcool/blockwalk
+If you use Minecraft Java: Please check out my other plugin!: https://github.com/koningcool/blockwalk
 
 
 # General
@@ -35,7 +35,7 @@ At the moment there is nothing on the ToDo list!
  
  # Issues
 
- At the moment there are no problems!
+ At the moment we have a issue with saving the config.yml after a server restart.
 
  If you have a problem you can report it [Here](https://github.com/koningcool/LoadAllWorlds/issues/new)
  
