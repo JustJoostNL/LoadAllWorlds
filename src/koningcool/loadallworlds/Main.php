@@ -14,7 +14,7 @@ use function scandir;
 class Main extends PluginBase
 {
     private bool $debugMode = false;
-    private array $configData = (array) null;
+    private array $configData = [];
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
