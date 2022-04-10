@@ -32,8 +32,8 @@ class Main extends PluginBase
         };
 
         if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Exclude mode: '" . $excludelist . "'");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Excluded worlds: '" . $exclude . "'");
         }
 
         # Load the levels
