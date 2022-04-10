@@ -35,19 +35,19 @@ class Main extends PluginBase
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Command started.");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Command started.");
         }
         $allWorlds = $this->getServer()->getWorldManager()->getWorlds();
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "getWorlds");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "getWorlds");
         }
         $loadedLevelsBefore = count($allWorlds); # ->countLoadedWorlds($allWorlds);
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Counted worlds.");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Counted worlds.");
         }
 
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
         }
 
         # Get appropriate exclude list (on-load, on-command, default = no list)
@@ -64,8 +64,8 @@ class Main extends PluginBase
         }
 
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
         }
 
         # Load the levels
@@ -80,29 +80,29 @@ class Main extends PluginBase
         $loadedLevelsAfter = count($allWorlds); # ->countLoadedWorlds($allWorlds);
 
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Fishished loading worlds.");
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Fishished loading worlds.");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
 
         if (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
         } else {
-            $this->getLogger()->debug(TextFormat::DARK_RED . "No extra worlds loaded!");
+            $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
         }
     }
     # Load message
     public function onLoad() : void
     {
-#        if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
-#        }
+        if ($this->debugMode === true) {
+            $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
+        }
     }
     # Enable message
     public function onEnable() : void
     {
-#        if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
-#        }
+        if ($this->debugMode === true) {
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
+        }
         $this->reloadConfig();
         $this->configData = $this->getConfig()->getAll();
         $this->migrateConfig();
@@ -112,7 +112,7 @@ class Main extends PluginBase
     {
         $this->getConfig()->save();
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
+            $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
         }
     }
 
