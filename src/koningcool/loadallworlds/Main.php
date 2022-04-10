@@ -18,7 +18,7 @@ interface PluginIdentifiableCommand
 
 class Main extends PluginBase
 {
-    private $debugMode = false;
+    private $debugMode = true;
     private $configData = null;
 
     private function countLoadedWorlds (array $arrWorlds) : int
