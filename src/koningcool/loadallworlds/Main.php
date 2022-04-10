@@ -2,6 +2,7 @@
 declare(strict_types=1);
 namespace koningcool\loadallworlds;
 
+use JsonException;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
@@ -13,7 +14,7 @@ use function scandir;
 class Main extends PluginBase
 {
     private bool $debugMode = false;
-    private $configData = null;
+    private array $configData = (array) null;
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
@@ -79,9 +80,14 @@ class Main extends PluginBase
         $this->migrateConfig();
     }
     # Disable message
+
     public function onDisable() : void
     {
-        $this->getConfig()->save();
+        try {
+            $this->getConfig()->save();
+        } catch (JsonException $e) {
+            $this->getLogger()->info(TextFormat::DARK_RED . " " . $e->getMessage());
+        }
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
         }
@@ -119,7 +125,11 @@ class Main extends PluginBase
             $oldvalue = array("load-worlds" => $this->configData["load-on-startup"], "exclude" => "");
             $this->getConfig()->set("on-startup", $oldvalue);
             # Save config
-            $this->getConfig()->save();
+            try {
+                $this->getConfig()->save();
+            } catch (JsonException $e) {
+                $this->getLogger()->info(TextFormat::DARK_RED . " " . $e->getMessage());
+            }
             # Get the new config data in local storage
             $this->configData = $this->getConfig()->getAll();
         }
