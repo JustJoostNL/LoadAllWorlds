@@ -6,9 +6,9 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
+use pocketmine\plugin\Plugin;
 use function array_diff;
 use function scandir;
-use pocketmine\plugin\Plugin;
 
 interface PluginIdentifiableCommand
 {
@@ -25,9 +25,10 @@ class Main extends PluginBase
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
-        $loadedLevelsBefore = (int)count($this->getServer()->getLevels());
+        $loadedLevelsBefore = count($this->getServer()->getWorldManager()->getWorlds());
+
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
         }
 
         # Get appropriate exclude list (on-load, on-command, default = no list)
@@ -44,44 +45,46 @@ class Main extends PluginBase
         }
 
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Excluded worlds: " . $exclude);
         }
 
         # Load the levels
+
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             # Only load level if not in exclude list, which can be empty
             $excludeArray = explode(",", $exclude);
             if (!in_array($levelName, $excludeArray)) {
-                $this->getServer()->loadLevel($levelName);
+                # $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName);
+                $this->getServer()->getWorldManager()->loadWorld($levelName);
             }
         }
 
-        $loadedLevelsAfter = (int)count($this->getServer()->getLevels());
+        $loadedLevelsAfter = count($this->getServer()->getWorldManager()->getWorlds());
 
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Fishished loading worlds.");
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Finished loading worlds.");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
 
         if (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
         } else {
-            $this->getLogger()->debug(TextFormat::DARK_RED . "No extra worlds loaded!");
+            $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
         }
     }
     # Load message
     public function onLoad() : void
     {
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
+            $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
     }
     # Enable message
     public function onEnable() : void
     {
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         }
         $this->reloadConfig();
         $this->configData = $this->getConfig()->getAll();
@@ -92,7 +95,7 @@ class Main extends PluginBase
     {
         $this->getConfig()->save();
         if ($this->debugMode === true) {
-            $this->getLogger()->debug(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
+            $this->getLogger()->info(TextFormat::DARK_RED . "LoadAllWorlds Disabled!");
         }
     }
 

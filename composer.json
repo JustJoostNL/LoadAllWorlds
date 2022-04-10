@@ -10,6 +10,8 @@
     }
   ],
   "require": {
-    "phpstan/phpstan": "1.5.4"
+    "phpstan/phpstan": "^0.12.18",
+    "phpstan/phpstan-strict-rules": "^0.12.2",
+    "phpstan/extension-installer": "^1.0"
   }
 }
