@@ -7,6 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\Plugin;
+use JackMD\UpdateNotifier\UpdateNotifier;
 use function array_diff;
 use function scandir;
 
@@ -20,7 +21,7 @@ interface PluginIdentifiableCommand
 
 class Main extends PluginBase
 {
-    private $debugMode = false;
+    private bool $debugMode = false;
     private $configData = null;
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
@@ -32,17 +33,11 @@ class Main extends PluginBase
         }
 
         # Get appropriate exclude list (on-load, on-command, default = no list)
-        switch ($excludelist) {
-            case "on-load":
-                $exclude = $this->configData["on-startup"]["exclude"];
-                break;
-            case "on-command":
-                $exclude = $this->configData["on-command"]["exclude"];
-                break;
-            default:
-                $exclude = "";
-                break;
-        }
+        $exclude = match ($excludelist) {
+            "on-load" => $this->configData["on-startup"]["exclude"],
+            "on-command" => $this->configData["on-command"]["exclude"],
+            default => "",
+        };
 
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Exclude mode: " . $excludelist);
@@ -76,6 +71,8 @@ class Main extends PluginBase
     # Load message
     public function onLoad() : void
     {
+        UpdateNotifier::checkUpdate($this->getDescription()->getName(), $this->getDescription()->getVersion());
+
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
