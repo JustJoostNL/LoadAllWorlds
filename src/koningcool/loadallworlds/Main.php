@@ -37,12 +37,10 @@ class Main extends PluginBase
         }
 
         # Load the levels
-
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             # Only load level if not in exclude list, which can be empty
             $excludeArray = explode(",", $exclude);
             if (!in_array($levelName, $excludeArray)) {
-                # $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName);
                 $this->getServer()->getWorldManager()->loadWorld($levelName);
             }
         }
@@ -55,12 +53,18 @@ class Main extends PluginBase
         }
 
         if (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)) {
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Before: " . $loadedLevelsBefore);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "After: " . $loadedLevelsAfter);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo" . $showInfo);
             $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
         } else {
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Before: " . $loadedLevelsBefore);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "After: " . $loadedLevelsAfter);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo" . $showInfo);
             $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
         }
     }
-    # Load message
+
     public function onLoad() : void
     {
         UpdateNotifier::checkUpdate($this->getDescription()->getName(), $this->getDescription()->getVersion());
@@ -69,7 +73,7 @@ class Main extends PluginBase
             $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
     }
-    # Enable message
+
     public function onEnable() : void
     {
         if ($this->debugMode === true) {
@@ -79,7 +83,6 @@ class Main extends PluginBase
         $this->configData = $this->getConfig()->getAll();
         $this->migrateConfig();
     }
-    # Disable message
 
     public function onDisable() : void
     {
