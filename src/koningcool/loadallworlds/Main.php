@@ -20,7 +20,7 @@ interface PluginIdentifiableCommand
 
 class Main extends PluginBase
 {
-    private $debugMode = true;
+    private $debugMode = false;
     private $configData = null;
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
@@ -58,7 +58,6 @@ class Main extends PluginBase
         foreach (array_diff(scandir($this->getServer()->getDataPath() . "worlds"), ["..", "."]) as $levelName) {
             # Only load level if not in exclude list, which can be empty
             $excludeArray = explode(",", $exclude);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Evaluating world: " . $levelName);
             if (!in_array($levelName, $excludeArray)) {
                 $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName);
                 $this->getServer()->getWorldManager()->loadWorld($levelName);
