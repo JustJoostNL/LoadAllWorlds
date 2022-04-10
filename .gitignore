@@ -2,7 +2,8 @@
 /descs
 /releases/
 .vscode/
+.idea/
 /.idea
-/vendor
 /vendor/
-/vendor/
+composer.json
+composer.lock
