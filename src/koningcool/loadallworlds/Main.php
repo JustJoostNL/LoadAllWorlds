@@ -34,8 +34,17 @@ class Main extends PluginBase
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
+        if ($this->debugMode === true) {
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Command started.");
+        }
         $allWorlds = $this->getServer()->getWorldManager()->getWorlds();
+        if ($this->debugMode === true) {
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "getWorlds");
+        }
         $loadedLevelsBefore = count($allWorlds); # ->countLoadedWorlds($allWorlds);
+        if ($this->debugMode === true) {
+            $this->getLogger()->debug(TextFormat::DARK_GREEN . "Counted worlds.");
+        }
 
         if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
