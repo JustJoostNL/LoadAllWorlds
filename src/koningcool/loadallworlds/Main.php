@@ -21,16 +21,16 @@ class Main extends PluginBase
     private $debugMode = true;
     private $configData = null;
 
-    private function countLoadedWorlds (array $arrWorlds) : int
-    {
-        $numWorlds = 0;
-        foreach ($arrWorlds as $world) {
-            if ($world->isLoaded()) {
-                $numWorlds = $numWorlds +1;
-            }
-        }
-        return  $numWorlds;
-    }
+#    private function countLoadedWorlds (array $arrWorlds) : int
+#    {
+#        $numWorlds = 0;
+#        foreach ($arrWorlds as $world) {
+#            if ($world->isLoaded()) {
+#                $numWorlds = $numWorlds +1;
+#            }
+#        }
+#        return  $numWorlds;
+#    }
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
@@ -93,16 +93,16 @@ class Main extends PluginBase
     # Load message
     public function onLoad() : void
     {
-        if ($this->debugMode === true) {
+#        if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
-        }
+#        }
     }
     # Enable message
     public function onEnable() : void
     {
-        if ($this->debugMode === true) {
+#        if ($this->debugMode === true) {
             $this->getLogger()->debug(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
-        }
+#        }
         $this->reloadConfig();
         $this->configData = $this->getConfig()->getAll();
         $this->migrateConfig();
