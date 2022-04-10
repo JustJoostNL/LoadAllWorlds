@@ -21,30 +21,25 @@ class Main extends PluginBase
     private $debugMode = true;
     private $configData = null;
 
-#    private function countLoadedWorlds (array $arrWorlds) : int
-#    {
-#        $numWorlds = 0;
-#        foreach ($arrWorlds as $world) {
-#            if ($world->isLoaded()) {
-#                $numWorlds = $numWorlds +1;
-#            }
-#        }
-#        return  $numWorlds;
-#    }
+    private function countLoadedWorlds (array $arrWorlds) : int
+    {
+        $numWorlds = 0;
+        foreach ($arrWorlds as $world) {
+            if ($world->isLoaded()) {
+                $numWorlds = $numWorlds +1;
+            }
+        }
+        return  $numWorlds;
+    }
 
     private function loadWorlds(string $excludelist, bool $showInfo) : void
     {
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Command started.");
         }
+
         $allWorlds = $this->getServer()->getWorldManager()->getWorlds();
-        if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "getWorlds");
-        }
-        $loadedLevelsBefore = count($allWorlds); # ->countLoadedWorlds($allWorlds);
-        if ($this->debugMode === true) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Counted worlds.");
-        }
+        $loadedLevelsBefore = $this->countLoadedWorlds($allWorlds);
 
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded before: " . $loadedLevelsBefore);
@@ -72,12 +67,14 @@ class Main extends PluginBase
         foreach ($allWorlds as $levelName) {
             # Only load level if not in exclude list, which can be empty
             $excludeArray = explode(",", $exclude);
+            $this->getLogger()->info(TextFormat::DARK_GREEN . "Evaluating world: " . $levelName->getDisplayName());
             if (!in_array($levelName->getDisplayName(), $excludeArray)) {
+                $this->getLogger()->info(TextFormat::DARK_GREEN . "Loading world: " . $levelName->getDisplayName());
                 $this->getServer()->getWorldManager()->loadWorld($levelName->getDisplayName());
             }
         }
 
-        $loadedLevelsAfter = count($allWorlds); # ->countLoadedWorlds($allWorlds);
+        $loadedLevelsAfter = $this->countLoadedWorlds($allWorlds);
 
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Fishished loading worlds.");
