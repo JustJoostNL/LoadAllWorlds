@@ -52,15 +52,14 @@ class Main extends PluginBase
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
 
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "Before: " . $loadedLevelsBefore);
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "After: " . $loadedLevelsAfter);
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "Before>After: " . ($loadedLevelsAfter > $loadedLevelsBefore));
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "Before>After && showinfo: " . (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)));
+
         if (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)) {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Before: " . $loadedLevelsBefore);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "After: " . $loadedLevelsAfter);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo" . $showInfo);
             $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
         } else {
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "Before: " . $loadedLevelsBefore);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "After: " . $loadedLevelsAfter);
-            $this->getLogger()->info(TextFormat::DARK_GREEN . "ShowInfo" . $showInfo);
             $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
         }
     }
