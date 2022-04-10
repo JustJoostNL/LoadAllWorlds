@@ -54,7 +54,7 @@ class Main extends PluginBase
             $this->getLogger()->info(TextFormat::DARK_GREEN . "Worlds loaded after: " . $loadedLevelsAfter);
         }
 
-        if (($loadedLevelsAfter > $loadedLevelsBefore) && ($showInfo === true)) {
+        if (($loadedLevelsAfter >= $loadedLevelsBefore) && ($showInfo === true)) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "One or more worlds were loaded.");
         } else {
             $this->getLogger()->info(TextFormat::DARK_RED . "No extra worlds loaded!");
