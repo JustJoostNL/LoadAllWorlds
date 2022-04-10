@@ -1,0 +1,15 @@
+{
+  "name": "koningcool/LoadAllWorlds",
+  "description": "The LoadAllWorlds PocketMine-MP Plugin",
+  "minimum-stability": "stable",
+  "license": "GPL-3.0 License",
+  "authors": [
+    {
+      "name": "koningcool",
+      "email": "65183670+koningcool@users.noreply.github.com"
+    }
+  ],
+  "require": {
+    "phpstan/phpstan": "1.5.4"
+  }
+}
