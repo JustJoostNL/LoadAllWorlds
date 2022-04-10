@@ -2,7 +2,6 @@
 build-by-default: true
 branches:
 - master
-- 11-configyml-resets-itself-every-time-the-server-starts
 projects:
   loadallworlds:
     path: ""
