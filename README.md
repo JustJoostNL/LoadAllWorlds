@@ -30,7 +30,7 @@ If you only use 1 world, this plugin is not necessary
 
 # ToDo
 
-At the moment there is nothing on the ToDo list!
+Fixing config file save issue.
 
  
  # Issues
