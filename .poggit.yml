@@ -2,7 +2,7 @@
 build-by-default: true
 branches:
 - master
-- pmmp-api4
+- 11-configyml-resets-itself-every-time-the-server-starts
 projects:
   loadallworlds:
     path: ""
