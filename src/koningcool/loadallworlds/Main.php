@@ -7,6 +7,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
+use DaPigGuy\libPiggyUpdateChecker\libPiggyUpdateChecker;
 use function array_diff;
 use function scandir;
 
@@ -67,9 +68,24 @@ class Main extends PluginBase
 
     public function onEnable() : void
     {
+        foreach (
+            [
+                "libPiggyUpdateChecker" => libPiggyUpdateChecker::class
+            ] as $virion => $class
+        ) {
+            if (!class_exists($class)) {
+                $this->getLogger()->error($virion . " virion not found. Please download LoadAllWorlds from Poggit-CI or use DEVirion (not recommended).");
+                $this->getServer()->getPluginManager()->disablePlugin($this);
+                return;
+            }
+        }
+
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_GREEN . "LoadAllWorlds Enabled!");
         }
+
+        libPiggyUpdateChecker::init($this);
+
         $this->reloadConfig();
         $this->configData = $this->getConfig()->getAll();
         $this->migrateConfig();
