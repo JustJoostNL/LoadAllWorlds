@@ -6,12 +6,13 @@
 
 For all the badges click [Here](https://github.com/koningcool/LoadAllWorlds/blob/master/shields-badges.md)
 
+**PLEASE READ [IMPORTANT](https://github.com/koningcool/LoadAllWorlds#important) BEFORE INSTALLING THIS PLUGIN!!**
+
 
 If you use Minecraft Java: Please check out my other plugin!: https://github.com/koningcool/blockwalk
 
 
 # General
-BEFORE INSTALLING THIS PLUIGN PLEASE READ [IMPORTANT](https://github.com/koningcool/LoadAllWorlds#important)!!
 
 This is a plugin that adds commands to load worlds, and can be configured to load worlds on startup.
 
@@ -28,6 +29,8 @@ This is an easy plugin but very useful!
 
 # Important
 ONLY CHANGE THE CONFIG FILE WHILE THE SERVER IS OFF!!
+
+Please download the phar file from [poggit](https://poggit.pmmp.io/p/loadallworlds/), not from github, only poggit includes the autoupdater, otherwise you will get a error!!
 
 If you only use 1 world, this plugin is not necessary
 
@@ -77,7 +80,7 @@ Or go to our [Discussions](https://github.com/koningcool/LoadAllWorlds/discussio
 # Info
  Name: LoadAllWorlds
  
- Author: koningcool
+ Authors: koningcool and TweakM
 
  Version: 1.1.4
 
