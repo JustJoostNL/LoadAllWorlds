@@ -82,7 +82,7 @@ Or go to our [Discussions](https://github.com/koningcool/LoadAllWorlds/discussio
  
  Authors: koningcool and TweakM
 
- Version: 1.1.4
+ Version: 1.1.3
 
  Poggit Builds: If you want to see al the builds click [Here](https://poggit.pmmp.io/ci/koningcool/LoadAllWorlds/loadallworlds) (NOT AL THE BUILDS ARE STABLE!!!)
  
