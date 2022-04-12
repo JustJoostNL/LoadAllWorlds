@@ -7,7 +7,6 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
-use JackMD\UpdateNotifier\UpdateNotifier;
 use function array_diff;
 use function scandir;
 
@@ -61,8 +60,6 @@ class Main extends PluginBase
 
     public function onLoad() : void
     {
-        UpdateNotifier::checkUpdate($this->getDescription()->getName(), $this->getDescription()->getVersion());
-
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
