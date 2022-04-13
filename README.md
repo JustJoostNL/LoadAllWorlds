@@ -30,7 +30,7 @@ This is an easy plugin but very useful!
 # Important
 ONLY CHANGE THE CONFIG FILE WHILE THE SERVER IS OFF!!
 
-Please download the phar file from [poggit](https://poggit.pmmp.io/p/loadallworlds/), not from github, only poggit includes the autoupdater, otherwise you will get a error!!
+Please download the phar file from [poggit](https://poggit.pmmp.io/p/loadallworlds/), not from GitHub, only poggit includes the autoupdater, otherwise you will get an error!!
 
 If you only use 1 world, this plugin is not necessary
 
@@ -51,7 +51,7 @@ At the moment there is nothing on the ToDo list!
 
 # Ideas
 
-If you have nice ideas, Create your own code and then you can create a pull request [Here](https://github.com/koningcool/LoadAllWorlds/pulls)
+If you have nice ideas, Create your own code, and then you can create a pull request [Here](https://github.com/koningcool/LoadAllWorlds/pulls)
 
 Or go to our [Discussions](https://github.com/koningcool/LoadAllWorlds/discussions) tab to tell us your idea.
 
