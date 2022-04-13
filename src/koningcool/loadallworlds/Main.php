@@ -1,5 +1,7 @@
 <?php
+
 declare(strict_types=1);
+
 namespace koningcool\loadallworlds;
 
 use JsonException;
@@ -16,7 +18,7 @@ class Main extends PluginBase
     private bool $debugMode = false;
     private array $configData = [];
 
-    private function loadWorlds(string $excludelist) : void
+    private function loadWorlds(string $excludelist): void
     {
         $loadedLevelsBefore = count($this->getServer()->getWorldManager()->getWorlds());
 
@@ -59,14 +61,14 @@ class Main extends PluginBase
         }
     }
 
-    public function onLoad() : void
+    public function onLoad(): void
     {
         if ($this->debugMode === true) {
             $this->getLogger()->info(TextFormat::DARK_BLUE . "LoadAllWorlds Loaded!");
         }
     }
 
-    public function onEnable() : void
+    public function onEnable(): void
     {
         foreach (
             [
@@ -91,7 +93,7 @@ class Main extends PluginBase
         $this->migrateConfig();
     }
 
-    public function onDisable() : void
+    public function onDisable(): void
     {
         try {
             $this->getConfig()->save();
@@ -103,7 +105,7 @@ class Main extends PluginBase
         }
     }
 
-    public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool
+    public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool
     {
         switch ($command->getName()) {
             case "loadall":
