@@ -78,7 +78,6 @@ class Main extends PluginBase
             if (!class_exists($class)) {
                 $this->getLogger()->error($virion . " virion not found. Please download LoadAllWorlds from Poggit-CI or use DEVirion (not recommended).");
                 $this->getLogger()->error("The plugin will now be disabled because the virion is not found.");
-                $this->getLogger()->error("Disabling LoadAllWorlds plugin...");
                 $this->getServer()->getPluginManager()->disablePlugin($this);
                 $this->getLogger()->error("Disabled!");
 
