@@ -32,7 +32,7 @@ ONLY CHANGE THE CONFIG FILE WHILE THE SERVER IS OFF!!
 
 Please download the phar file from [poggit](https://poggit.pmmp.io/p/loadallworlds/), not from GitHub, only poggit includes the autoupdater, otherwise you will get an error!!
 
-If you only use 1 world, this plugin is not necessary
+If you only use 1 world, this plugin is not necessary.
 
 # ToDo
 
